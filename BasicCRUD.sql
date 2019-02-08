@@ -155,7 +155,7 @@ ORDER BY e.HireDate DESC
 -- 20. Increase Salaries
 
 UPDATE Employees
-SET Salary = Salary / 1.12
+SET Salary = Salary * 1.12
 WHERE EmployeeID IN(
 		SELECT e.EmployeeID
 		FROM Employees AS e
